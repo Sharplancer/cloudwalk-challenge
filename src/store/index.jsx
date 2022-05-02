@@ -2,7 +2,7 @@ import { AnyAction, combineReducers, configureStore, Reducer } from "@reduxjs/to
 import logDataSlice from "./logdata-slice";
 
 const combinedReducer = combineReducers({
-  logData: logDataSlice.reducer
+  logData: logDataSlice.reducer,
 });
 
 export type RootState = ReturnType<typeof combinedReducer>;
@@ -12,7 +12,7 @@ const rootReducer: Reducer = (state: ReturnType<typeof store.getState>, action: 
 };
 
 const store = configureStore({
-  reducer: rootReducer
+  reducer: rootReducer,
 });
 
 export default store;
