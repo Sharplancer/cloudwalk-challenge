@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cloudwalk-challenge/static/css/main.1ef3a49a.css",
+    "main.js": "/cloudwalk-challenge/static/js/main.71431c20.js",
+    "static/js/787.2c164931.chunk.js": "/cloudwalk-challenge/static/js/787.2c164931.chunk.js",
+    "index.html": "/cloudwalk-challenge/index.html",
+    "main.1ef3a49a.css.map": "/cloudwalk-challenge/static/css/main.1ef3a49a.css.map",
+    "main.71431c20.js.map": "/cloudwalk-challenge/static/js/main.71431c20.js.map",
+    "787.2c164931.chunk.js.map": "/cloudwalk-challenge/static/js/787.2c164931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ef3a49a.css",
+    "static/js/main.71431c20.js"
+  ]
+}
