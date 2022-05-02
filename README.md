@@ -56,13 +56,13 @@ Chakra-ui
 ### components/Report.tsx
 Shows the result of grouped information and a player rank in table or JSON.
 
-- Fetch log information - Trigger fetchLogData action in redux
+- Fetch log information - Trigger fetchLogData action in redux read the log file
 ```TypeScript
     useEffect(() => {
         dispatch(fetchLogData()); 
     }, [dispatch]);
 ```
-- Group each match from log information
+- LogParsher, Group game data of each match from Quake log information, and Collect Kill data
 ```TypeScript
     const { matchInfos, matchInfoJSON, playerRank, gameKills } = useSelector((state: RootState) => {
         let logData = state.logData.logData;
