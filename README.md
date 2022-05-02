@@ -1,5 +1,8 @@
 # About Project
 
+## Quick browse
+http://sharplancer.github.io/cloudwalk-challenge
+
 ## Tech Stack
 React.js, Redux, Hooks, TypeScript
 
@@ -24,9 +27,9 @@ Chakra-ui
 |
 |_index.tsx
 ```
-\
+
 ### Code
-index.tsx
+### index.tsx
 ```TypeScript
     ...
     <Provider store={store}>
@@ -37,8 +40,8 @@ index.tsx
     </Provider>
     ...
 ```
-\
-pages/HomePage.tsx
+
+### pages/HomePage.tsx
 - Shows project title
 - Involve Report component
 ```TypeScript
@@ -49,8 +52,8 @@ pages/HomePage.tsx
         </Box>
     ...
 ```
-\
-components/Report.tsx
+
+### components/Report.tsx
 Shows the result of grouped information and a player rank in table or JSON.
 
 - Fetch log information - Trigger fetchLogData action in redux
@@ -180,9 +183,9 @@ Shows the result of grouped information and a player rank in table or JSON.
     <Code><pre>{JSON.stringify(matchInfoJSON, null, 2)}</pre></Code>
     ...
 ```
-\
-store/logdata-slice.js
-\
+
+### store/logdata-slice.js
+
 This is redux, and I used it to control the logData as a global state and produce a fetch request.
 - Set the fetch Url as a constant
 ```TypeScript
