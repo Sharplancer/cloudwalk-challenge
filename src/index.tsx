@@ -1,15 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  ColorModeScript,
+  ChakraProvider,
+  theme
+} from "@chakra-ui/react";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App"
+import reportWebVitals from "./reportWebVitals"
+import store from "./store/index";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <BrowserRouter>
+        <ColorModeScript />
+        <ChakraProvider theme={theme}>
+          <App />
+        </ChakraProvider> 
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
